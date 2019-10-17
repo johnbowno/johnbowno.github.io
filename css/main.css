@@ -1,0 +1,453 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Source Sans Pro', TrebuchetMS, 'Droid Sans', sans-serif!important;
+    font-size: 14px;
+    height: 100%;
+    line-height: 1.3;
+    width: 100%;
+}
+
+main {
+    background-color: #fff;
+    box-sizing: border-box;
+    color: #666;
+    line-height: 1.4;
+    min-height: 100vh;
+    min-width: 320px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.logo {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    height: 36px;
+    left: 0;
+    margin: 10px 15px;
+    padding: 4px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 36px;
+}
+
+.head {
+    box-sizing: border-box;
+    max-height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.head .image {
+    background-color: #eee;
+    background-image: url(../images/background.jpg);
+    background-position: 55% 20%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 -130px 200px -50px rgba(0,0,0,.5);
+    box-sizing: border-box;
+    background-size: cover;
+    padding-bottom: 130%;
+}
+
+.head .name-headline {
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+    width: 100%;
+}
+
+.name-headline .name {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.head .name-headline .name {
+    color: #fff;
+}
+
+.name-headline .headline {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.head .name-headline .headline {
+    color: #fff;
+}
+
+.body {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.body .name-headline {
+    display: none;
+}
+
+.spotlight {
+    margin-top: 20px;
+}
+
+.button {
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(174,174,174);
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.05), inset 0 0 0 100px rgba(0,0,0,.1);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 38px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.button:before {
+    display: inline-block;
+    content: "\f140";
+    font-family: FontAwesome;
+    font-variant: normal;
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 1em;
+    margin-right: .4em;
+    position: relative;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    top: .05em;
+    width: 1em;
+}
+
+.bio {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 400px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.bio p {
+    margin-bottom: .75em;
+}
+
+.bio p:last-child {
+    margin-bottom: 0;
+}
+
+ul.inline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.inline>li {
+    vertical-align: baseline;
+}
+
+ul.inline, ul.inline>li {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.interests {
+    margin-top: 20px;
+}
+
+ul.inline li.interest {
+    margin: 5px;
+    padding: 0;
+}
+
+ui.inline li.interest a {
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+ul.inline li a.social-link {
+    -webkit-font-smoothing: antialiased;
+    color: rgba(54,71,78,.7);
+    cursor: pointer;
+    display: block;
+    font-size: 30px;
+    line-height: 36px;
+    height: 36px;
+    margin: 10px;
+    padding: 0;
+    text-decoration: none;
+    width: 36px;
+}
+
+ul.inline li a.social-link svg {
+    fill: rgba(54,71,78,.7);
+    height: 100%;
+    width: 100%;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 801px) {
+    main {
+        text-align: left;
+    }
+
+    .container {
+        height: 100vh;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .head {
+        max-height: 100%;
+        width: 66%;    
+    }
+
+    .head .image {
+        background-color: #eee;
+        position: fixed;
+        width: inherit;
+        min-height: 100%;
+        padding-bottom: 0!important;
+    }
+
+    .head .name-headline {
+        display: none;
+    }
+
+    .body {
+        padding: 100px 60px;
+        width: 33%;
+    }
+
+    .body .name-headline {
+        display: block;
+    }
+
+    .bio {
+        margin: 0;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
